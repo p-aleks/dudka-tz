@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dudka-tz/static/css/main.955b74b9.chunk.css",
-    "main.js": "/dudka-tz/static/js/main.94523eff.chunk.js",
-    "main.js.map": "/dudka-tz/static/js/main.94523eff.chunk.js.map",
+    "main.js": "/dudka-tz/static/js/main.98d6cade.chunk.js",
+    "main.js.map": "/dudka-tz/static/js/main.98d6cade.chunk.js.map",
     "runtime-main.js": "/dudka-tz/static/js/runtime-main.27cc3e17.js",
     "runtime-main.js.map": "/dudka-tz/static/js/runtime-main.27cc3e17.js.map",
     "static/js/2.fb3a4568.chunk.js": "/dudka-tz/static/js/2.fb3a4568.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.27cc3e17.js",
     "static/js/2.fb3a4568.chunk.js",
     "static/css/main.955b74b9.chunk.css",
-    "static/js/main.94523eff.chunk.js"
+    "static/js/main.98d6cade.chunk.js"
   ]
 }
