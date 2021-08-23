@@ -1,0 +1,68 @@
+.packages {
+    flex-grow: 1;
+    padding: 65px 100px;
+    overflow: auto;
+
+    .search-wrapper {
+        margin-bottom: 70px;
+
+        .search-label {
+            align-items: center;
+            display: flex;
+            position: relative;
+        }
+
+        .search-icon {
+            left: 20px;
+            position: absolute;
+        }
+
+        .search-input {
+            background: none;
+            border: none;
+            color: #999999;
+            font-size: 18px;
+            font-weight: normal;
+            line-height: 21px;
+            margin-left: 20px;
+            padding: 10px 10px 10px 45px;
+            width: 310px;
+        }
+    }
+
+    .heading {
+        align-items: center;
+        display: flex;
+        margin: 0 0 80px 20px;
+
+        h1 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 27px;
+            line-height: 32px;
+        }
+        .entries {
+            align-self: flex-end;
+            color: #999999;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 25px;
+            margin-left: 18px;
+        }
+    }
+
+    .packages-main {
+        position: relative;
+
+        .toggle-add-form-btn {
+            background: #fff;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            z-index: 2
+        }
+    }
+}

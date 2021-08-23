@@ -1,0 +1,165 @@
+.table-wrapper {
+    max-height: 65vh;
+    overflow-y: auto;
+}
+
+
+table {
+    min-width: 1140px;
+    overflow: scroll;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+
+    thead {
+        .table-head {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+
+            th {
+                padding: 25px 10px;
+                font-weight: bold;
+                font-size: 15px;
+                line-height: 18px;
+                color: #999999;
+                text-align: left;
+                background-color: #FBFBFB;
+            }
+        }
+    }
+
+    tbody {
+        &.table-entries {
+            tr:hover {
+                z-index: 1;
+
+                td {
+                    background-color: #0C94F5;
+                    color: white;
+                }
+
+                td:first-child {
+                    border-top-left-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                }
+
+                td:last-child {
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                }
+            }
+        }
+
+        tr {
+            position: relative;
+
+            &:not(.table-head, .add-package-form, :last-child, :hover) {
+                td:first-child {
+                    &::before,
+                    &::after {
+                        content: "";
+                        width: calc(100% - 40px);
+                        height: 1px;
+                        background-color: #C4C4C4;
+                        position: absolute;
+                        left: 20px;
+                    }
+
+                    &::after {
+                        bottom: -1px;
+                    }
+
+                    &::before {
+                        top: -1px;
+                    }
+                }
+
+                &:nth-child(2n) {
+                    td:first-child {
+                        &::after {
+                            content: none;
+                        }
+
+                        &::before {
+                            content: none;
+                        }
+                    }
+
+                    &:nth-last-child(2) {
+                        td:first-child {
+                            &::after {
+                                content: '';
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:not(.add-package-form):last-child:not(:hover) {
+                &::after {
+                    content: "";
+                    width: calc(100% - 40px);
+                    height: 1px;
+                    background-color: #C4C4C4;
+                    position: absolute;
+                    left: 20px;
+                    bottom: 1px;
+                }
+            }
+
+            td {
+                padding: 25px 10px;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 18px;
+            }
+
+            .entry-id {
+                color: #0F8DC4;
+                font-weight: 700;
+            }
+
+            .online {
+                padding: 5px 12px 5px 28px;
+                background: rgba(115, 228, 96, 0.4);
+                border-radius: 30px;
+                color: #398E2A;
+                position: relative;
+                white-space: nowrap;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 5px;
+                    background: #398E2A;
+                    top: 10px;
+                    left: 11px;
+                }
+            }
+        }
+
+    }
+
+    tr {
+        th, td {
+            &:first-child {
+                padding-left: 20px;
+            }
+
+            &:last-child {
+                padding-right: 20px;
+            }
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 1439px) {
+    .packages {
+        padding: 65px 50px;
+    }
+}
